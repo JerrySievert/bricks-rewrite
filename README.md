@@ -1,8 +1,12 @@
-== bricks-rewrite ==
+# bricks-rewrite
 
 A rewrite module for [bricks.js](http://bricksjs.com/ "bricks.js").
 
-=== Usage ===
+## Installing
+
+    $ npm install bricks-rewrite
+
+## Usage
 
     var rewrite = require('bricks-rewrite');
     

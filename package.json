@@ -5,12 +5,14 @@
   "version": "0.1.0",
   "homepage": "http://bricksjs.com/",
   "repository": {
-    "url": ""
+    "type": "git",
+    "url": "http://github.com/JerrySievert/bricks-rewrite.git"
   },
   "main": "lib/rewrite.js",
   "engines": {
     "node": "~v0.4.7"
   },
+  "license" : "MIT/X11",
   "dependencies": {},
   "devDependencies": {
        "vows": "~0.5.0"
