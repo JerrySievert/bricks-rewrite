@@ -1,0 +1,25 @@
+{
+  "author": "Jerry Sievert <code@legitimatesounding.com> (http://legitimatesounding.com/blog/)",
+  "name": "bricks-rewrite",
+  "description": "A simple rewrite plugin for bricks.js",
+  "version": "0.1.0",
+  "homepage": "http://bricksjs.com/",
+  "repository": {
+    "url": ""
+  },
+  "main": "lib/rewrite.js",
+  "engines": {
+    "node": "~v0.4.7"
+  },
+  "dependencies": {},
+  "devDependencies": {
+       "vows": "~0.5.0"
+   },
+   "directories": {
+       "test": "./test",
+       "lib":  "./lib"
+   },
+   "scripts": {
+       "test": "vows --spec"
+   }
+}
