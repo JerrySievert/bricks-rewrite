@@ -2,7 +2,8 @@
   "author": "Jerry Sievert <code@legitimatesounding.com> (http://legitimatesounding.com/blog/)",
   "name": "bricks-rewrite",
   "description": "A simple rewrite plugin for bricks.js",
-  "version": "0.1.0",
+  "keywords": ["rewrite", "bricks", "bricksjs"],
+  "version": "0.1.2",
   "homepage": "http://bricksjs.com/",
   "repository": {
     "type": "git",
