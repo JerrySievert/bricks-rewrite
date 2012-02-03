@@ -31,7 +31,7 @@ Response.prototype.next = function () {
     
 };
 
-rewrite.init({ rules: [ { path: new RegExp(/^\/$/), replace: '/index.html' } ] });
+rewrite.init({ rules: [ { path: "^/$", replace: '/index.html' } ] });
 
 vows.describe('Rewrite').addBatch({
     'rewrite of path / to /index.html': {
@@ -59,5 +59,19 @@ vows.describe('Rewrite').addBatch({
         'should end up with /index.html?foo=bar': function (topic) {
             assert.equal(topic.url, '/index.html?foo=bar');
         }
+    },
+    'do not rewrite of path /foo/?foo=bar to /index.html?foo=bar': {
+        topic: function () {
+            var request = { url: '/foo/?foo=bar' };
+            var response = new Response();
+            
+            rewrite.plugin(request, response);
+            
+            return request;
+        },
+        'should end up with /foo/?foo=bar': function (topic) {
+            assert.equal(topic.url, '/foo/?foo=bar');
+        }
     }
+    
 }).export(module);

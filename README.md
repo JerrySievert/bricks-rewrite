@@ -12,7 +12,7 @@ A rewrite module for [bricks.js](http://bricksjs.com/ "bricks.js").
     
     var rules = [
       {
-        path:    new RegExp(/^\/$/),
+        path:    '^/$',
         replace: '/index.html'
       }
     ];
